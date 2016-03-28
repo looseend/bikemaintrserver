@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.looseend.bikemaintr.server.model.Bike;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/bike")
+@CrossOrigin(origins = "http://localhost:3000")
 public class BikeServiceController {
 
 	@RequestMapping("/")
